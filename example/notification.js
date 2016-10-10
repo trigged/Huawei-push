@@ -11,7 +11,8 @@ msg
 
 var notification = new Notification({
   appId: config.appId,
-  appSecret: config.appSecret
+  appSecret: config.appSecret,
+  redis: config.redis
 });
 
 notification.send(config.tokens, msg, config.callback);
